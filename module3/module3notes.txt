@@ -1,0 +1,95 @@
+NPM node package manager
+
+bundlers - automatically combine all your dependencies into a single file
+	ex: gulp, webpack
+	
+responsive design - allow the same site to be used on a variety of screen sizes
+	multiple physical pixels are combined into a single logical pixel for display on smartphones, etc
+	This is achieved by:
+	1) flexible grids (coulmns, gutters and margins) | margin | coulmn | gutter | column | margin
+	2) fluid images (Max-width: 100%)
+	3) media queries (dispaly size, orientation, aspect ratio)
+		ex: @media only screen and (max-width: 700px){ /*700px is called breakpoint*/
+			body{
+				background-color: blue;
+			}
+			
+Breakpoints
+	Fixed grid - fixed content width columns, flexible margins
+	Fluid grid - flexible content grid that goes edge to edge, coulmns grow or shrink to fit the screen
+	Hybrid grid - used both fixed width and fluid width components
+	
+Bootstrap - a collection of pre-written code chunks in CSS and JavaScript, allows you to create website more quickly than from scratch
+
+Screen size
+Breakpoint	Class infix	Dimensions (width)
+Extra small				<576px (default breakpoint)
+Small		sm			>=576px
+Medium		md			>=768px
+Large		lg			>=992px
+Extra large	xl			>=1200px
+Ex ex large	xxl			>=1400px
+
+How to use modifiers (modifier = primary)
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="alert alert-primary role="alert">
+				A primary alert
+			</div>
+		</div>
+	</div>
+</body>
+
+Modifiers
+	Primary
+	Secondary
+	Success
+	Info
+	Warning
+	Danger
+	Light
+	Dark
+	
+CSS Libraries
+	Foundation - used to style content for sending via email
+	Pure.css - designed to be minimal and fast
+	Tailwind CSS - html based design, allows for more precise development
+	UIKit - lightweight framework, small set of responsive components, allows easy customization
+	MVP.css - automatically styles HTML elemenets without needing to apply CSS classes to them, allows fast prototyping
+	
+React isn’t an MVC framework,
+
+reconciliation
+	Step 1: The virtual DOM is updated.
+	Step 2: The virtual DOM is compared to the previous version of the virtual DOM and checks which elements have changed.
+	Step 3: The changed elements are updated in the browser DOM.
+	Step 4: The displayed webpage updates to match the browser DOM.
+
+static vs dynamic content
+
+Application server - where dynamic content is generated
+
+SPA - single page application, one HTML page that is updated with content
+	Bundling - all necessary HTML, CSS, and JavaScript is sent per request
+	Lazy loading - only needed data is downloaded
+	
+JSON - JavaScript Object Notation, contains only data to be displayed, instead of entire webpage
+
+React Fiber Architecture - prioritizing updates to the part the user can see
+
+React Developer Tools web browser plugin
+
+Component Hierarchy (blog example site)
+	App component - root, the entire webpage
+	Children
+		Nav bar component - contains title, navigation links, search component (displays blog summary of specific blog post)
+		Page component - main featured component, 2 instances of a small feature component (blog summary and thumbnail for each)
+		
+React is a library, not a framework, so is often used with other libraries
+	LoDash - collection of logical utilities (sorting of lists, rounding of numbers)
+	Luxon - helps you work with dates and times in the users local format
+	Redux - state tracking, includes undo and redo
+	Axios - helps to simplify sending HTTP requests and processing the response, also allows for cancelling of requests and changing data received from the web server before the application uses the data
+	Jest - helps you write automated tests, includes reporting utilities

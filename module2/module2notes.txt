@@ -1,0 +1,110 @@
+HTML Tags, Elements
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Welcome to my page!
+		</title>
+	</head>
+	<body>
+		<h1>Heading One</h1>
+		<p>Page contents</p>
+		<img src="image.jpg" width="240" height="135" alt="An image">
+		<a href="pageTwo.html">Page Two</a>
+		<style>
+			table, th, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+		</style>
+		<table>
+			<tr>
+				<th>Dish</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<td>Food One</td>
+				<td>Price One</td>
+			</tr>
+			<tr>
+				<td>Food Two</td>
+				<td>Price Two</td>
+			</tr>
+		</table>
+		<form action="/registration" method="POST">
+			<label for="username">Username:</label><br>
+			<input type="text" name="username">
+			
+			<label for="password">Password:</lable><br>
+			<input type="password" />
+			<input type="submit" />
+		</form>
+	</body>
+</html>
+
+
+Text, Password, Checkbox, Radio, Textarea, Select
+
+DOM = document object module
+	tree structure of objects in HTML file
+	allows you to modify all objects on a webpage
+	
+   html
+	|----------------|
+   head             body
+    |                |-------------|
+   title            div           div
+    |                |             |
+   text              h1            p
+                     |             |
+					text          text
+					
+WAI Web Accessibility Initiative
+ARIA Accessible Rich Internet Application
+
+
+
+CSS
+
+Selector    Declaration
+    |           |
+	p {         |
+		color:blue;
+	}
+	
+Declaration block = part inside curly brackets
+
+
+Box Model
+
+
+
+|-----------------------|
+|        margin         |
+|-----------------------|
+|        border         |
+|-----------------------|
+|        padding        |
+|-----------------------|
+|m|b|p| content  |p|b|m||
+|-----------------------|
+|        padding        |
+|-----------------------|
+|        border         |
+|-----------------------|
+|        margin         |
+|-----------------------|
+
+padding box width = content width + padding box left-side + padding box right-side
+padding box height = content height + padding box top-side + padding box bottom-side
+border box width = padding width + border right side + border left-side
+border box height = padding height + border top-side + border bottom-side
+margin box width = border width + margin left + margin right
+margin box height =  border height + margin top + margin bottom
+
+document flow = how the browser knows where to put each element
+	block = each element stacks upon the previous element
+		ex: div, form, heading
+	inline = each element is placed next to the previous element, in line
+		ex: a href, img src, input, label, b, i, em, span

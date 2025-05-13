@@ -1,0 +1,35 @@
+h1 {
+    color: purple;
+}
+
+h1:hover {
+    color: blue;
+}
+
+#header1{
+    color: green;
+}
+
+#header2{
+    color: orange;
+    font-style: italic;
+}
+
+p {
+    color:hsl(0,100%,50%);
+    font-family: "Helvetica", monospace;
+    font-size: 14px;
+    Margin: 40px 1px 5px 2px;
+    Padding: 5px;
+
+}
+
+p:hover{
+    color: rgba(0,0,0,0.5);
+    text-transform: uppercase;
+    text-decoration: underline red wavy 3px;
+    Padding: 2px;
+    border-width: medium;
+    border-style: dashed;
+    Margin: 2px 1px 2px 1px;
+}

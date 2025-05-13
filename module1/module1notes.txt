@@ -1,0 +1,86 @@
+Actively take notes 
+html - builkding itself, internal structure
+css - landscaping, colors and styles
+javascript - business within building, user interaction
+
+url - uniform resource locator
+
+request, response cycle
+
+shared hosting - rent partial server, other sites impact yours, least expensive
+vps virtual private server - dedicated portion of shared hardware, other sites unlikely to impact yours
+dedicated hosting - dedicated hardware
+cloud hosting - cloud env, spans physical and virtual servers, most expensive, scalable
+
+IP Packet = datagram
+	contains destination and source ip in the header
+	
+TCP - Transmission Control Protocol
+UDP - User Datagram Protocol, broadcast
+
+HTTP request methods
+	GET - retrieve data from server
+	POST - send data to server
+	PUT - update data on server
+	DELETE - remove
+	PATCH - partial updates data on server
+Example
+	method path httpVersion
+	GET /home.html HTTP/1.1
+	
+HTTP response
+	header
+	body
+	
+	
+HTTP Headers Example
+	Host: example.com
+	User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:50.0) Gecko/20100101 Firefox/50.0
+	Accept: */*
+	Accept-Language: en
+	Content-type: text/json
+	
+HTTP Request Body Example
+	POST /users HTTP/1.1
+	Host: example.com
+
+	{
+	"key1":"value1",
+	"key2":"value2",
+	"array1":["value3","value4"]
+	}
+	
+	PUT /users/1 HTTP/1.1
+	Host: example.com
+	Content-type: text/json
+
+	{"key1":"value1"}
+	
+HTTP Responses Example
+	HTTP/1.1 200 OK 
+
+House analogy
+	HTML - framing
+	CSS - paint, decorations, finishes
+	JavaScript - utilties (electricity, plumbing, etc)
+	
+	
+Framework (opinionated) = a structure for developers to build with, example: blueprint
+Library (unopinionated) = reusable pieces of code, example: validate email address
+
+API = Application Programming Interface
+	a set of functions or procedures for creating applications that access the features or data of the OS, application or other service
+	
+Browser API, REST API, Sensor-based API
+
+API = bridge, gateway, middleware
+
+Browser API, Web API
+
+REST = representational state transfer, provide data for requests
+	GET
+	POST
+	PUT
+	DELETE
+	
+ 
